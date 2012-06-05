@@ -10,14 +10,15 @@ Obtener y compilar la documentación
 ===================================
 
 El almacenamiento de este material está disponible en un repositorio Git 
-en la cuenta de macagua en GitHub.com `"pyve.documentacion" <https://github.com/pyve/pyve.documentacion>`_. 
+en la cuenta de PythonVE en GitHub.com "`pyve.documentacion`_". 
 Si usted tiene una credenciales en este servidor y desea convertirse en 
 un colaborador ejecute el siguiente comando: ::
 
   $ git clone git@github.com:pyve/pyve.documentacion.git pyve.documentacion
 
-Si usted no tiene las credenciales de acceso al repositorio Git en la cuenta de macagua en GitHub.com `"pyve.documentacion" <https://github.com/pyve/pyve.documentacion>`_ o simplemente solo desea obtener 
-y compilar esta documentación ejecute el siguiente comando: ::
+Si usted no tiene las credenciales de acceso al repositorio Git en la 
+cuenta de PythonVE en GitHub.com "`pyve.documentacion`_" o simplemente 
+solo desea obtener y compilar esta documentación ejecute el siguiente comando: ::
 
   $ git clone https://github.com/pyve/pyve.documentacion.git pyve.documentacion
 
@@ -177,3 +178,6 @@ no se actualiza cuando compilo el documento.
 **Respuesta :** El índice de Sphinx es a veces es desorientado y la gestión de la dependencia
 a veces, mejor. Por lo tanto, todo se debe reiniciar ejecutando el comando ``make clean`` 
 dentro del directorio ``pyve.documentacion/sphinx/build/``.
+
+
+.. _pyve.documentacion: https://github.com/pyve/pyve.documentacion
