@@ -2,7 +2,7 @@
 
 .. highlight:: rest
 
-Miembros
-========
+Plone Venezuela
+===============
 
-Por registrase
+TODO

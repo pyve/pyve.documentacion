@@ -31,7 +31,8 @@ extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.todo',
               'sphinx.ext.ifconfig',
               'sphinx.ext.viewcode',
-#              'sphinxtogithub']
+#              'sphinxtogithub'
+             ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -116,7 +117,7 @@ html_short_title = 'comunidad PyVE'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo='_static/logo.png'
+html_logo='_static/logo_pyve.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
