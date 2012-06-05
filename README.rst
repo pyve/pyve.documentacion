@@ -12,22 +12,16 @@ Obtener y compilar la documentación
 El almacenamiento de este material está disponible en un repositorio Git 
 en la cuenta de macagua en GitHub.com `"pyve.documentacion" <https://github.com/pyve/pyve.documentacion>`_. 
 Si usted tiene una credenciales en este servidor y desea convertirse en 
-un colaborador ejecute el siguiente comando:
-
-.. code-block:: sh
+un colaborador ejecute el siguiente comando: ::
 
   $ git clone git@github.com:pyve/pyve.documentacion.git pyve.documentacion
 
-Si usted no tiene las credenciales de acceso al repositorio Git en la cuenta de macagua en GitHub.com `"macagua" <https://github.com/macagua/plone-spanish-documentations>`_ o simplemente solo desea obtener 
-y compilar esta documentación ejecute el siguiente comando:
-
-.. code-block:: sh
+Si usted no tiene las credenciales de acceso al repositorio Git en la cuenta de macagua en GitHub.com `"pyve.documentacion" <https://github.com/pyve/pyve.documentacion>`_ o simplemente solo desea obtener 
+y compilar esta documentación ejecute el siguiente comando: ::
 
   $ git clone https://github.com/pyve/pyve.documentacion.git pyve.documentacion
 
-Crear entorno virtual de Python para reconstruir este proyecto:
-
-.. code-block:: sh
+Crear entorno virtual de Python para reconstruir este proyecto: ::
 
   # aptitude install python-setuptools git-core
   # easy_install virtualenv
@@ -36,9 +30,7 @@ Crear entorno virtual de Python para reconstruir este proyecto:
   $ virtualenv --no-site-packages --python=/usr/bin/python sphinx
   $ cd -
 
-Ahora puede generar la documentación de HTML, con los siguiente comandos:
-
-.. code-block:: sh
+Ahora puede generar la documentación de HTML, con los siguiente comandos: ::
 
   $ source virtualenv/sphinx/bin/activate
   (sphinx)$ cd pyve.documentacion/
@@ -49,9 +41,7 @@ Ahora puede generar la documentación de HTML, con los siguiente comandos:
 Ahora se puede abrir ``pyve.documentacion/build/html/index.html`` desde 
 su navegador Web favorito.
 
-Para obtener la documentación en PDF:
-
-.. code-block:: sh
+Para obtener la documentación en PDF ejecute los siguientes comandos: ::
 
   $ source virtualenv/sphinx/bin/activate
   (sphinx)$ cd ./pyve.documentacion/build
