@@ -24,16 +24,14 @@ solo desea obtener y compilar esta documentación ejecute el siguiente comando: 
 
 Crear `entorno virtual de Python`_ para reconstruir este proyecto: ::
 
-  # aptitude install python-setuptools git-core
+  # aptitude install git-core build-essential python-dev python-setuptools texlive-full
   # easy_install virtualenv
-  # exit
   $ cd $HOME ; mkdir $HOME/virtualenv ; cd $HOME/virtualenv
   $ virtualenv --no-site-packages --python=/usr/bin/python sphinx
-  $ cd -
-
+  $ source $HOME/virtualenv/sphinx/bin/activate
+  
 Ahora puede generar la documentación de HTML, usando `zc.buildout`_ con los siguiente comandos: ::
 
-  $ source virtualenv/sphinx/bin/activate
   (sphinx)$ cd pyve.documentacion/
   (sphinx)$ python bootstrap.py
   (sphinx)$ ./bin/buildout -vN
@@ -44,13 +42,16 @@ su navegador Web favorito.
 
 Para obtener la documentación en PDF ejecute los siguientes comandos: ::
 
-  $ source virtualenv/sphinx/bin/activate
   (sphinx)$ cd ./pyve.documentacion/build
   (sphinx)$ make latex
   (sphinx)$ make latexpdf
 
 Ahora se puede abrir ``pyve.documentacion/build/latex/DocumentacionPyVE.pdf`` 
 con sus programas de visor de PDF favorito (Evince, Acrobat Reader, ...)
+
+.. tip::
+    Si tienes algún problema al general la documentación en formato PDF, puedes 
+    consultar el siguiente enlace http://jimmyg.org/blog/2009/sphinx-pdf-generation-with-latex.html
 
 
 Reglas de redacción
@@ -124,14 +125,14 @@ depende del nivel de anidamiento del archivo en la estructura general de
 documento. Para generar el HTML, no es un problema, pero en LaTeX limita
 la superposición de las secciones a 6 niveles.
 
-Contribuciones SVN
-==================
+Contribuciones a esta documentación
+===================================
 
 Wow, estás contento con tu excelente trabajo. Y le gustaría compartirlo con
 todo el mundo. Al igual que cuando "contribuidor" de código fuente, las pruebas
 unitarias no deben mostrar ningún error, compruebe en primer lugar:
 
-* Que el comando ``make html`` no genere ningún error o advertencia.
+* Que el comando ``make html`` o ``./bin/sphinx`` no genere ningún error o advertencia.
 * Que su redacción no posea ningún error de ortografía.
 * Los enlaces de hipertexto que se ha agregado o cambiado (glosario, enlaces
   externos explícitos, referencias a las secciones, ...) funcionan correctamente.
@@ -139,23 +140,25 @@ unitarias no deben mostrar ningún error, compruebe en primer lugar:
 Imágenes
 ========
 
-Aparte de las capturas de pantalla - ¡Uy, lo siento - las capturas de pantalla!, 
-las imágenes Sphinx se inserta en el documento debe ir acompañada de su versión
-"Fuente" en un formato público interoperables, y para que el editor pueda abrir
-el archivo fuente que este disponible. Las imágenes deben estar preferentemente en el formato
-PNG.
+Aparte de las capturas de pantalla, las imágenes Sphinx se inserta en el documento 
+debe ir acompañada de su versión "Fuente" en un formato público interoperables, y 
+para que el editor pueda abrir el archivo fuente que este disponible. Las imágenes 
+deben estar preferentemente en el formato PNG.
 
-Además, durante cada inserción o cambio de imagen, usted **debe**
-verificar y ajustar si es necesario la representación PDF, a sabiendas de las limitaciones
-la imagen a tamaño del papel final.
+Además, durante cada inserción o cambio de imagen, usted **debe** verificar y ajustar 
+si es necesario la representación PDF, a sabiendas de las limitaciones la imagen a 
+tamaño del papel final.
 
-**Ejemplo :** ::
+**Ejemplo de uso relacionado a imágenes:** ::
 
    .. gs-map.mm: imagen de mapa mental de los servicios de GenericSetup. Creado con FreeMind
 
    .. image:: gs-map.png
+      :width: 636px
       :align: center
       :alt: imagen de mapa mental de los servicios de GenericSetup
+
+**Ejemplo de uso relacionado captura de pantalla o ilustraciones:** ::
 
    .. figure::  screenshot.jpg
       :align:   center
@@ -163,7 +166,7 @@ la imagen a tamaño del papel final.
 
 **Aplicaciones gráficas recomendadas**
 
-Diagramas : `Graphviz`_
+Para realizar diagramas de sus clase puede usar : `Graphviz`_
 
 
 Ejemplos de documentación en Sphinx
