@@ -2,7 +2,10 @@
 
 .. highlight:: rest
 
+.. _asamblea_fundacional:
+
 Asamblea fundacional
 ====================
 
-Por realizarse.
+.. todo ::
+    Por realizarse.

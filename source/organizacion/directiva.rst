@@ -2,7 +2,10 @@
 
 .. highlight:: rest
 
+.. _directiva:
+
 Directiva
 =========
 
-Por elegir
+.. todo ::
+    Por elegir

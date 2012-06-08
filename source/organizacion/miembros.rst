@@ -2,7 +2,10 @@
 
 .. highlight:: rest
 
+.. _miembros:
+
 Miembros
 ========
 
-Por registrase
+.. todo ::
+    Por registrase
