@@ -1,5 +1,5 @@
 ==================================
-documentación de la comunidad PyVE
+Documentación de la comunidad PyVE
 ==================================
 
 Repositorio de documentación de la comunidad Python Venezuela
@@ -22,7 +22,7 @@ solo desea obtener y compilar esta documentación ejecute el siguiente comando: 
 
   $ git clone https://github.com/pyve/pyve.documentacion.git pyve.documentacion
 
-Crear entorno virtual de Python para reconstruir este proyecto: ::
+Crear `entorno virtual de Python`_ para reconstruir este proyecto: ::
 
   # aptitude install python-setuptools git-core
   # easy_install virtualenv
@@ -31,7 +31,7 @@ Crear entorno virtual de Python para reconstruir este proyecto: ::
   $ virtualenv --no-site-packages --python=/usr/bin/python sphinx
   $ cd -
 
-Ahora puede generar la documentación de HTML, con los siguiente comandos: ::
+Ahora puede generar la documentación de HTML, usando `zc.buildout`_ con los siguiente comandos: ::
 
   $ source virtualenv/sphinx/bin/activate
   (sphinx)$ cd pyve.documentacion/
@@ -49,15 +49,15 @@ Para obtener la documentación en PDF ejecute los siguientes comandos: ::
   (sphinx)$ make latex
   (sphinx)$ make latexpdf
 
-Ahora se puede abrir ``pyve.documentacion/sphinx/build/latex/DocumentacionPyVE.pdf`` 
+Ahora se puede abrir ``pyve.documentacion/build/latex/DocumentacionPyVE.pdf`` 
 con sus programas de visor de PDF favorito (Evince, Acrobat Reader, ...)
 
 
 Reglas de redacción
 ===================
 
-En primer lugar, debe aprender los `fundamentos de Sphinx
-<http://sphinx.pocoo.org/contents.html>`_ que es un reStructuredText extendido.
+En primer lugar, debe aprender los `fundamentos de Sphinx`_ que es un 
+reStructuredText extendido.
 
 
 Codificación de caracteres
@@ -154,19 +154,33 @@ la imagen a tamaño del papel final.
    .. gs-map.mm: imagen de mapa mental de los servicios de GenericSetup. Creado con FreeMind
 
    .. image:: gs-map.png
+      :align: center
+      :alt: imagen de mapa mental de los servicios de GenericSetup
+
+   .. figure::  screenshot.jpg
+      :align:   center
+      :alt: Captura de pantalla del programa de mapa mental
 
 **Aplicaciones gráficas recomendadas**
 
-Diagramas : `Graphviz <http://www.graphviz.org/>`_
+Diagramas : `Graphviz`_
+
+
+Ejemplos de documentación en Sphinx
+===================================
+
+* `Python documentation`_
+* `Zope documentation`_
+* `Plone Developer Documentation`_
+* `D:YAML documentation`_
 
 
 Algunas de las herramientas recomendadas
 ========================================
 
-Emacs : usted puede agregar a emacs el módulo `rst.el
-<http://svn.berlios.de/svnroot/repos/docutils/trunk/docutils/tools/editors/emacs/rst.el>`_
-que añade un par de comandos y la sintaxis de la documentación a los escritores 
-simpatizantes de Sphinx y reStructuredText.
+Emacs : usted puede agregar a emacs el módulo `rst.el`_ que añade un par de 
+comandos y la sintaxis de la documentación a los escritores simpatizantes 
+de Sphinx y reStructuredText.
 
 
 FAQ
@@ -181,3 +195,12 @@ dentro del directorio ``pyve.documentacion/sphinx/build/``.
 
 
 .. _pyve.documentacion: https://github.com/pyve/pyve.documentacion
+.. _entorno virtual de Python: http://readthedocs.org/docs/plone-spanish-docs/en/latest/python/creacion_entornos_virtuales_python.html
+.. _zc.buildout: http://readthedocs.org/docs/plone-spanish-docs/en/latest/buildout/replicacion_proyectos_python.html
+.. _fundamentos de Sphinx: http://sphinx.pocoo.org/contents.html
+.. _Graphviz: http://www.graphviz.org/
+.. _rst.el: http://svn.berlios.de/svnroot/repos/docutils/trunk/docutils/tools/editors/emacs/rst.el
+.. _Python documentation: http://docs.python.org/
+.. _Zope documentation: http://docs.zope.org/zope2/index.html
+.. _Plone Developer Documentation: http://collective-docs.plone.org/
+.. _D:YAML documentation: http://dyaml.alwaysdata.net/static/html/doc_0.4/index.html
