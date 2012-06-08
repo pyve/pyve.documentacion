@@ -19,6 +19,8 @@ Contenidos:
    organizacion/miembros
    asambleas/fundacional
    lug-locales/index
+   eventos/index
+   todo
 
 
 Recursos de esta documentación
